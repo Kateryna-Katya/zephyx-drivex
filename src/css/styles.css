@@ -1202,7 +1202,7 @@ img {
 
 .pages h1 {
     font-family: var(--font-heading);
-    font-size: 3rem;
+    font-size: 1.8rem;
     margin-bottom: 40px;
     color: var(--accent-color);
 }
@@ -1509,4 +1509,46 @@ body.menu-open {
     align-items: center;
     justify-content: center;
     font-weight: 700;
+}
+/* Специфические стили для контента Дисклеймера */
+.pages__content p {
+    margin-bottom: 2.5rem;
+    position: relative;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.pages__content p:last-of-type {
+    border-bottom: none;
+}
+
+.pages__content strong {
+    display: block;
+    color: var(--accent-color);
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.pages__footer-note {
+    margin-top: 40px;
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    text-align: right;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+/* Эффект при наведении на блоки текста */
+.pages__content p {
+    transition: var(--transition);
+}
+
+.pages__content p:hover {
+    color: var(--text-main);
+    background: rgba(255, 255, 255, 0.02);
+    padding-left: 15px;
+    border-left: 2px solid var(--secondary-color);
 }
