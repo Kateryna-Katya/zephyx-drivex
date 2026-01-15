@@ -1,56 +1,445 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/zephyx-drivex/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zephyx Drivex | Технологии нового поколения</title>
+<link rel="icon"
+  href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 5 L95 27.5 L95 72.5 L50 95 L5 72.5 L5 27.5 Z' fill='none' stroke='%2300f2ff' stroke-width='6'/%3E%3Ccircle cx='50' cy='50' r='15' fill='%237000ff'/%3E%3C/svg%3E"
+  type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@300;500;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.0.0/dist/lenis.css">
     <script type="module" crossorigin src="/zephyx-drivex/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/zephyx-drivex/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/zephyx-drivex/assets/styles-EiZEMrAu.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
+  <div class="container header__container">
+    <a href="/" class="logo">
+      <span class="logo__text">Zephyx<span>Drivex</span></span>
+    </a>
+
+    <nav class="nav" id="nav-menu">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#home" class="nav__link">Главная</a></li>
+        <li class="nav__item"><a href="#platform" class="nav__link">Платформа</a></li>
+        <li class="nav__item"><a href="#benefits" class="nav__link">Преимущества</a></li>
+        <li class="nav__item"><a href="#innovations" class="nav__link">Инновации</a></li>
+        <li class="nav__item"><a href="#blog" class="nav__link">Обучение</a></li>
+        <li class="nav__item nav__item--mobile">
+          <a href="#contact" class="btn btn--primary">Запросить доступ</a>
         </li>
       </ul>
     </nav>
+
+    <a href="#contact" class="btn btn--header">Запросить доступ</a>
+
+    <button class="burger" id="burger-menu" aria-label="Открыть меню">
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </button>
   </div>
 </header>
 
-
     <main>
       <!-- Loads the specified .html file -->
-      
+      <section class="hero" id="home">
+    <div class="hero__glow hero__glow--1"></div>
+    <div class="hero__glow hero__glow--2"></div>
+    <div class="hero__particles" id="hero-particles"></div>
+
+    <div class="container hero__container">
+        <div class="hero__content">
+            <div class="hero__badge reveal-text">Платформа года доступна в Европе</div>
+            <h1 class="hero__title reveal-text">
+                Технология <span class="text-gradient">нового поколения</span> в IT-образовании
+            </h1>
+            <p class="hero__subtitle reveal-text">
+                Переосмыслите подход к развитию. Постройте карьеру, которая работает на вас, используя решения, меняющие
+                правила игры.
+            </p>
+            <div class="hero__actions reveal-text">
+                <a href="#contact" class="btn btn--primary">Начать сейчас</a>
+                <a href="#platform" class="btn btn--outline">Узнать детали</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="platform" id="platform">
+    <div class="container">
+        <div class="platform__header">
+            <span class="section-subtitle reveal-text">Цифровая экосистема</span>
+            <h2 class="section-title reveal-text">Инновационная цифровая <br>инфраструктура</h2>
+            <p class="section-desc reveal-text">
+                Мы создали платформу года, где AI-инструменты для реальных задач сочетаются с методологиями, доказавшими
+                свою эффективность.
+            </p>
+        </div>
+
+        <div class="platform__grid">
+            <div class="platform-card reveal-text">
+                <div class="platform-card__icon">
+                    <i class="fas fa-microchip"></i>
+                </div>
+                <h3 class="platform-card__title">Адаптивный AI-тьютор</h3>
+                <p class="platform-card__text">
+                    Технологии, которые работают на вас. Персональная траектория обучения, корректируемая в реальном
+                    времени.
+                </p>
+                <div class="platform-card__bg"></div>
+            </div>
+
+            <div class="platform-card reveal-text">
+                <div class="platform-card__icon">
+                    <i class="fas fa-project-diagram"></i>
+                </div>
+                <h3 class="platform-card__title">Экосистема проектов</h3>
+                <p class="platform-card__text">
+                    Расширьте горизонты проекта через работу в кросс-функциональных командах над реальными задачами
+                    рынка Франции.
+                </p>
+                <div class="platform-card__bg"></div>
+            </div>
+
+            <div class="platform-card reveal-text">
+                <div class="platform-card__icon">
+                    <i class="fas fa-shield-halved"></i>
+                </div>
+                <h3 class="platform-card__title">Стандарты безопасности</h3>
+                <p class="platform-card__text">
+                    Ваш пошаговый путь, понятный каждому, защищен передовыми протоколами шифрования и авторизации.
+                </p>
+                <div class="platform-card__bg"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="benefits" id="benefits">
+    <div class="container">
+        <div class="benefits__top">
+            <h2 class="section-title reveal-text">Почему выбирают <br><span class="text-gradient">Zephyx Drivex</span>
+            </h2>
+        </div>
+
+        <div class="benefits__list">
+            <div class="benefit-item reveal-text">
+                <div class="benefit-item__num">01</div>
+                <div class="benefit-item__content">
+                    <h3 class="benefit-item__title">Финансовая независимость</h3>
+                    <p class="benefit-item__text">
+                        Наша уникальная технология для пассивного дохода позволяет монетизировать ваши учебные проекты
+                        еще на этапе обучения.
+                    </p>
+                    <span class="benefit-item__tag">Программа года</span>
+                </div>
+            </div>
+
+            <div class="benefit-item reveal-text">
+                <div class="benefit-item__num">02</div>
+                <div class="benefit-item__content">
+                    <h3 class="benefit-item__title">Актуальные практики</h3>
+                    <p class="benefit-item__text">
+                        Мы предлагаем практики, применимые уже сегодня. Никакой «воды» — только инструменты для реальных
+                        задач рынка ЕС.
+                    </p>
+                    <span class="benefit-item__tag">Fast Start</span>
+                </div>
+            </div>
+
+            <div class="benefit-item reveal-text">
+                <div class="benefit-item__num">03</div>
+                <div class="benefit-item__content">
+                    <h3 class="benefit-item__title">Стратегия роста</h3>
+                    <p class="benefit-item__text">
+                        Индивидуальная стратегия роста на базе инноваций. Мы помогаем построить карьеру, которая
+                        работает на вас.
+                    </p>
+                    <span class="benefit-item__tag">Career Hub</span>
+                </div>
+            </div>
+
+            <div class="benefit-item reveal-text">
+                <div class="benefit-item__num">04</div>
+                <div class="benefit-item__content">
+                    <h3 class="benefit-item__title">Экспертный консалтинг</h3>
+                    <p class="benefit-item__text">
+                        Проверенный партнер и экспертная поддержка на всех этапах — от первой строчки кода до оффера во
+                        Франции.
+                    </p>
+                    <span class="benefit-item__tag">Support 24/7</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="innovations" id="innovations">
+    <div class="container">
+        <div class="innovations__grid">
+            <div class="innovations__content">
+                <span class="section-subtitle reveal-text">Переосмысление подхода</span>
+                <h2 class="section-title reveal-text">Технологии, которые <br><span class="text-gradient">работают на
+                        вас</span></h2>
+                <p class="section-desc reveal-text">
+                    Мы объединили передовую цифровую инфраструктуру с AI-инструментами для реальных задач. Это не просто
+                    курсы, это экосистема роста.
+                </p>
+                <ul class="innovations__stats reveal-text">
+                    <li>
+                        <span class="stat-num">94%</span>
+                        <span class="stat-text">эффективности усвоения материала</span>
+                    </li>
+                    <li>
+                        <span class="stat-num">2.5x</span>
+                        <span class="stat-text">быстрее выход на Junior+ уровень</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="innovations__visual reveal-text">
+                <div class="compare-card">
+                    <div class="compare-card__side compare-card--old">
+                        <h4>Традиционно</h4>
+                        <ul>
+                            <li>Статичные лекции</li>
+                            <li>Устаревшие кейсы</li>
+                            <li>Линейный путь</li>
+                        </ul>
+                    </div>
+                    <div class="compare-card__divider">
+                        <div class="divider-circle">VS</div>
+                    </div>
+                    <div class="compare-card__side compare-card--new">
+                        <h4>Zephyx Drivex</h4>
+                        <ul>
+                            <li>AI-адаптивный контент</li>
+                            <li>Live-проекты Франции</li>
+                            <li>Индивидуальный вектор</li>
+                        </ul>
+                        <div class="glow-effect"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="tracks" id="blog">
+    <div class="container">
+        <div class="tracks__header">
+            <div class="tracks__info">
+                <span class="section-subtitle reveal-text">Ваш путь в IT</span>
+                <h2 class="section-title reveal-text">Выберите свой <br><span class="text-gradient">вектор
+                        развития</span></h2>
+            </div>
+            <div class="tracks__nav reveal-text">
+                <button class="track-btn" id="track-prev" aria-label="Previous">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="track-btn" id="track-next" aria-label="Next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="tracks__slider" id="tracks-slider">
+            <div class="track-card reveal-text" data-color="cyan">
+                <div class="track-card__inner">
+                    <div class="track-card__visual">
+                        <i class="fas fa-brain"></i>
+                        <div class="track-card__glow"></div>
+                    </div>
+                    <div class="track-card__content">
+                        <span class="track-card__tag">Advanced</span>
+                        <h3 class="track-card__title">AI Engineering</h3>
+                        <p class="track-card__text">Проектирование нейронных сетей и AI-инструментов для реальных задач
+                            бизнеса во Франции.</p>
+                        <a href="#contact" class="track-card__link">Узнать детали <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="track-card reveal-text" data-color="purple">
+                <div class="track-card__inner">
+                    <div class="track-card__visual">
+                        <i class="fas fa-code"></i>
+                        <div class="track-card__glow"></div>
+                    </div>
+                    <div class="track-card__content">
+                        <span class="track-card__tag">Popular</span>
+                        <h3 class="track-card__title">Web Architecture</h3>
+                        <p class="track-card__text">Создание передовой цифровой инфраструктуры: от высоконагруженных
+                            систем до креативного фронтенда.</p>
+                        <a href="#contact" class="track-card__link">Узнать детали <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="track-card reveal-text" data-color="magenta">
+                <div class="track-card__inner">
+                    <div class="track-card__visual">
+                        <i class="fas fa-robot"></i>
+                        <div class="track-card__glow"></div>
+                    </div>
+                    <div class="track-card__content">
+                        <span class="track-card__tag">New</span>
+                        <h3 class="track-card__title">Bot Ecosystems</h3>
+                        <p class="track-card__text">Решения, которые меняют правила игры: разработка сложных систем
+                            автоматизации и чат-платформ.</p>
+                        <a href="#contact" class="track-card__link">Узнать детали <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="contact__grid">
+            <div class="contact__info reveal-text">
+                <span class="section-subtitle">Свяжитесь с нами</span>
+                <h2 class="section-title">Готовы изменить <br><span class="text-gradient">правила игры?</span></h2>
+                <p class="section-desc">
+                    Запросите бесплатную консультацию по всем вопросам. Наши эксперты свяжутся с вами в течение 15
+                    минут, чтобы обсудить перспективы вашего проекта.
+                </p>
+
+                <div class="contact__details">
+                    <div class="contact__item">
+                        <div class="contact__icon"><i class="fas fa-headset"></i></div>
+                        <div>
+                            <h4>Экспертная поддержка</h4>
+                            <p>На связи 24/7 для студентов ЕС</p>
+                        </div>
+                    </div>
+                    <div class="contact__item">
+                        <div class="contact__icon"><i class="fas fa-envelope-open-text"></i></div>
+                        <div>
+                            <h4>Прямой Email</h4>
+                            <p>hello@zephyx-drivex.fit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact__form-wrapper reveal-text">
+                <form class="form" id="main-form">
+                    <div class="form__group">
+                        <input type="text" name="name" class="form__input" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form__group">
+                        <input type="email" name="email" class="form__input" placeholder="Email" required>
+                    </div>
+                    <div class="form__group">
+                        <input type="tel" name="phone" id="phone-input" class="form__input"
+                            placeholder="Телефон (только цифры)" required>
+                    </div>
+
+                    <div class="form__captcha">
+                        <label class="captcha-label" for="captcha-input">
+                            Решите пример: <span id="captcha-question">5 + 3</span> =
+                        </label>
+                        <input type="text" id="captcha-input" class="form__input form__input--captcha" placeholder="?"
+                            required>
+                    </div>
+
+                    <div class="form__agree">
+                        <label class="checkbox">
+                            <input type="checkbox" required>
+                            <span class="checkbox__checkmark"></span>
+                            <span class="checkbox__text">Согласен с политикой обработки персональных данных</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn--primary btn--form">
+                        <span class="btn-text">Отправить запрос</span>
+                        <div class="btn-loader"></div>
+                    </button>
+
+                    <div class="form__message" id="form-status"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
     </main>
 
     <footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+    <div class="footer__grid">
+      <div class="footer__col footer__col--info">
+        <a href="/" class="logo footer__logo">
+          <span class="logo__text">Zephyx<span>Drivex</span></span>
+        </a>
+        <p class="footer__desc">
+          Передовая цифровая инфраструктура для подготовки специалистов будущего. Решения, которые меняют правила игры в
+          IT-образовании.
+        </p>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__title">Навигация</h4>
+        <ul class="footer__links">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#platform">Платформа</a></li>
+          <li><a href="#benefits">Преимущества</a></li>
+          <li><a href="#innovations">Инновации</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__title">Документы</h4>
+        <ul class="footer__links">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookie Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="return.html">Return Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="personal-data-policy.html">Data Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__title">Контакты</h4>
+        <ul class="footer__contact">
+          <li>
+            <i class="fas fa-phone-alt"></i>
+            <a href="tel:+33142685300">+33 1 42 68 53 00</a>
+          </li>
+          <li>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:hello@zephyx-drivex.fit">hello@zephyx-drivex.fit</a>
+          </li>
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <span>15 Rue de la Paix, 75002 Paris, France</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2026 Zephyx Drivex. Платформа уже доступна в Европе.</p>
+    </div>
   </div>
 </footer>
-
+    <div class="cookie-popup" id="cookie-popup">
+      <div class="cookie-popup__content">
+        <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie
+            политике</a>.</p>
+        <button class="btn btn--primary btn--cookie" id="cookie-accept">Принять</button>
+      </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.0.0/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
   </body>
 </html>
